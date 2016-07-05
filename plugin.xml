@@ -48,12 +48,28 @@
         <source-file src="android/ZBar.java" target-dir="src/org/cloudsky/cordovaPlugins" />
         <source-file src="android/ZBarScannerActivity.java" target-dir="src/org/cloudsky/cordovaPlugins" />
         <source-file src="android/libs/zbar.jar" target-dir="libs" />
+        <!-- arm64-v8a -->
+        <source-file src="android/libs/arm64-v8a/libiconv.so" target-dir="libs/arm64-v8a" />
+        <source-file src="android/libs/arm64-v8a/libzbarjni.so" target-dir="libs/arm64-v8a" />
+        <!-- armeabi -->
         <source-file src="android/libs/armeabi/libiconv.so" target-dir="libs/armeabi" />
         <source-file src="android/libs/armeabi/libzbarjni.so" target-dir="libs/armeabi" />
+        <!-- armeabi-v7a -->
         <source-file src="android/libs/armeabi-v7a/libiconv.so" target-dir="libs/armeabi-v7a" />
         <source-file src="android/libs/armeabi-v7a/libzbarjni.so" target-dir="libs/armeabi-v7a" />
+        <!-- mips -->
+        <source-file src="android/libs/mips/libiconv.so" target-dir="libs/mips" />
+        <source-file src="android/libs/mips/libzbarjni.so" target-dir="libs/mips" /> 
+        <!-- mips64 -->
+        <source-file src="android/libs/mips64/libiconv.so" target-dir="libs/mips64" />
+        <source-file src="android/libs/mips64/libzbarjni.so" target-dir="libs/mips64" />
+        <!-- x86 -->
         <source-file src="android/libs/x86/libiconv.so" target-dir="libs/x86" />
         <source-file src="android/libs/x86/libzbarjni.so" target-dir="libs/x86" />
+        <!-- x86_64 -->
+        <source-file src="android/libs/x86_64/libiconv.so" target-dir="libs/x86_64" />
+        <source-file src="android/libs/x86_64/libzbarjni.so" target-dir="libs/x86_64" />
+
     </platform>
 
     <platform name="ios">
