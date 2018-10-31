@@ -302,6 +302,8 @@ implements SurfaceHolder.Callback {
     }
     public void onConfigurationChanged(Configuration newConfig)
     {
+        if (camera == null) return;
+
         super.onConfigurationChanged(newConfig);
         int rotation = getWindowManager().getDefaultDisplay().getRotation();
         switch(rotation)
@@ -334,7 +336,9 @@ implements SurfaceHolder.Callback {
     }
 
     public void toggleFlash(View view) {
-		camera.startPreview();
+        if(camera == null) return;
+
+        camera.startPreview();
         android.hardware.Camera.Parameters camParams = camera.getParameters();
         //If the flash is set to off
         try {
