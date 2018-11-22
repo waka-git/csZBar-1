@@ -73,8 +73,9 @@
         </config-file>
 
         <!-- Declare Camera Usage for iOS10+ -->
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="We access your camera to scan barcodes." />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-            <string>For Barcode Scanning</string>
+            <string>$CAMERA_USAGE_DESCRIPTION</string>
         </config-file>
 
         <framework src="AVFoundation.framework" />
