@@ -10,6 +10,8 @@ This plugin integrates with the [ZBar](http://zbar.sourceforge.net/) library,
 exposing a JavaScript interface for scanning barcodes (QR, 2D, etc).
 In this fork a button has been added to turn off and on device flash. In addition the plugin can now handle the device orientation change.
 
+For iOS platform, the plugin integrates with an updated version of the ZBar library, that can be found [here](https://github.com/OutSystems/zbar/tree/outsystems/iphone).
+
 ## Installation
 
     cordova plugin add cordova-plugin-cszbar
